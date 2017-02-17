@@ -9,7 +9,11 @@ class User < ApplicationRecord
   has_many :requests, dependent: :destroy
   has_many :suggestions, dependent: :destroy
   has_many :shops, dependent: :destroy
+<<<<<<< 0987c679d690d533c7901427d0df9d8a47da9f67
   
+=======
+
+>>>>>>> Shop owner manage categories
   enum role: [:user, :staff, :shop_owner, :mod, :admin]
   
   validates :user_name, presence: true,
